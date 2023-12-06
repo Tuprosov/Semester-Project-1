@@ -31,7 +31,6 @@
 html {
     box-sizing: border-box;
     font-family: 'Raleway', serif;
-    line-height: 140%;
     scroll-behavior: smooth;
 }
 
@@ -92,6 +91,7 @@ body {
 /* header */
 
 .header {
+    margin-bottom: 50px;
     gap: 20px;
     padding-top: 50px;
 }
