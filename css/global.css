@@ -88,6 +88,11 @@ body {
     margin: 0 auto;
 }
 
+section {
+    margin-bottom: 80px;
+}
+
+
 /* header */
 
 .header {
@@ -159,5 +164,24 @@ body {
 
 .social {
     gap: 10px;
+}
+
+/* hero */
+
+.hero-wrapper {
+    position: relative;
+    min-height: 450px;
+    border-radius: 10px;
+}
+
+.hero-wrapper h1 {
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+    color: #FFF;
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.40);
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 140%; /* 105px */
 }
 
