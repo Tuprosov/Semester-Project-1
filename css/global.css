@@ -150,6 +150,7 @@ section {
 }
 
 .link-wrapper {
+    gap: 10px;
     flex-direction: column;
 }
 
