@@ -1,7 +1,7 @@
 /* hero */
 
 .background {
-    background: url("../images/visit-hero.jpg") center center / cover no-repeat;
+    background: url("../images/about-hero.jpg") center -40px / cover no-repeat;
 }
 
 /* main */
@@ -32,14 +32,23 @@
     line-height: 160%;
 }
 
+.content-box p:nth-child(n+2) {
+    margin-bottom: 20px;
+} 
+
 .content-box:last-child p:not(:last-child) {
     margin-bottom: 20px;
 }
 
-.content-list li:not(:last-child) {
-    margin-bottom: 10px;
+.content__list {
+    gap: 30px;
 }
 
-.day {
-    font-weight: 600;
+.content__item {
+    width: 25%;
+}
+
+.content__item img {
+    aspect-ratio: 1 /1;
+    border-radius: 10px;
 }

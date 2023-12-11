@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/contributions.css">
-    <title>Contributions</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contacts</title>
 </head>
 <body>
     <div class="container">
@@ -63,44 +63,81 @@
             </div>
         </header>
     </div>
-    <section class="hero">
+    <div class="intro">
         <div class="container">
-            <div class="hero-wrapper background">
-                <h1>Get involved</h1>
-            </div>
+            <h1 class="intro__title">Contact us</h1>
         </div>
-    </section>
-    <section class="main">
+    </div>
+    <main class="main">
         <div class="container">
-            <div class="main-wrapper">
-                <h2 class="main__title">
-                    Join us in our mission to spark wonder and curiosity in the next generation of scientists, engineers, technicians and innovators.
-                </h2>
-                <div class="content-box">
-                    <h3>Volunteer</h3>
-                    <p>A number of people volunteer their time and effort to keep the displays in good order and ready for visitors to come and enjoy. Volunteering has its perks including getting to see behind the scenes of a working museum, access to staff-only lectures, and a monthly lunch where all staff and volunteers come together to discuss ideas for future exhibits and strategies for the museum.
-                        You can help volunteer in a number of different spheres. Please contact us if you’d like to find out more about how you can get involved.</p>
+            <div class="wrapper flex">
+                <div class="content">
+                    <h2>How to contact us</h2>
+                    <div class="accordion-wrapper">
+                        <div class="accordion-section">
+                            <input type="checkbox" id="section1">
+                            <label class="accordion-label" for="section1">GENERAL ENQUIRIES AND BOOKINGS</label>
+                            <div class="accordion-content">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                                <p>Phone: +00067600456</p>
+                                <p>Email: example@gmail.com</p>
+                            </div>
+                          </div>
+                          <div class="accordion-section">
+                            <input type="checkbox" id="section2">
+                            <label class="accordion-label" for="section2">ORGANIZE A GROUP TRIP</label>
+                            <div class="accordion-content">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                                <p>Phone: +00067600456</p>
+                                <p>Email: example@gmail.com</p>
+                            </div>
+                          </div>
+                          <div class="accordion-section">
+                            <input type="checkbox" id="section3">
+                            <label class="accordion-label" for="section3">CONTACT THE SHOP</label>
+                            <div class="accordion-content">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                                <p>Phone: +00067600456</p>
+                                <p>Email: example@gmail.com</p>
+                            </div>
+                          </div>
+                          <div class="accordion-section">
+                            <input type="checkbox" id="section4">
+                            <label class="accordion-label" for="section4">EXHIBITION PROPOSALS</label>
+                            <div class="accordion-content">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                                <p>Phone: +00067600456</p>
+                                <p>Email: example@gmail.com</p>
+                            </div>
+                          </div>
+                          <div class="accordion-section">
+                            <input type="checkbox" id="section5">
+                            <label class="accordion-label" for="section5">OBJECT DONATIONS</label>
+                            <div class="accordion-content">
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                                <p>Phone: +00067600456</p>
+                                <p>Email: example@gmail.com</p>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-                <div class="content-box">
-                    <h3>Internships</h3>
-                    <p>Are you interested in working in a museum? Do you enjoy the fun and excitement of sharing the wonders of nature with people? Well you could be just the right person to enjoy an internship at the museum. You’ll be learning from a number of different academics and people who are passionate about science and sharing it with the wider community.</p>
-                </div>
-                <div class="content-box">
-                    <h3>Support</h3>
-                    <p>There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.</p>
-                    <form class="content-form" action="POST">
-                        <label for="amount">I would like to donate (minimum donation 5 NOK):</label>
-                        <div class="input-box flex">
-                            <div class="currency">NOK</div>
-                            <input type="number" id="amount" name="amount" min="5" placeholder="50.00" required>
-                        </div>    
-                        <button class="btn-reset donate" type="submit">Donate now</button>
+                <div class="content">
+                    <h2>Leave a feedback</h2>
+                    <form class="content__form flex" action="POST">
+                        <input type="text" id="name" name="fullname" placeholder="Enter your fullname" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <textarea name="feedback" id="feedback" placeholder="Your feedback" required></textarea>
+                        <button class="btn-reset send">SEND</button>
                     </form>
-                    <p>You can also support us by donating items of interest to the museum’s collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
+                </div>
+                <div class="content">
+                    <h2>How we handle your feedback</h2>
+                    <p>Your feedback is very important to us and helps us to improve our services and experiences for all our visitors.
+                        We aim to reply within 10 working days of receipt of your feedback. If for any reason it is not possible to reply within that timeframe, we will keep you informed.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </main>
     <footer class="footer">
         <div class="container">
             <ul class="list-reset footer__list flex">
@@ -155,6 +192,7 @@
                 </li>
             </ul>
         </div>
-    </footer>  
+    </footer> 
+    
 </body>
 </html>
