@@ -137,12 +137,19 @@ section {
 
 /* footer */
 
-.footer__list {
-    justify-content: space-between;
+.footer {
+    padding-bottom: 20px;
+}
+
+.footer-wrapper {
     padding: 50px 55px 25px 55px;
     color: #fff;
     border-radius: 20px;
     background: linear-gradient(180deg, #222 0%, rgba(0, 0, 0, 0.90) 100%);
+}
+
+.footer__list {
+    justify-content: space-between;
 }
 
 .footer__item {
@@ -165,6 +172,14 @@ section {
 
 .social {
     gap: 10px;
+}
+
+.docs {
+    text-align: center;
+}
+
+.docs a:first-child {
+    margin-right: 40px;
 }
 
 /* hero */
@@ -202,3 +217,22 @@ section {
     line-height: 140%; /* 105px */
 }
 
+/* terms */
+.texts {
+    margin-bottom: 80px;
+}
+
+.texts__content {
+    padding: 0 20px;
+    max-width: 70%;
+    margin-bottom: 30px;
+}
+
+.texts__content h2 {
+    margin-bottom: 10px;
+}
+
+.texts__content p, .texts__content ul {
+    font-size: 1.1rem;
+    line-height: 23px;
+}
