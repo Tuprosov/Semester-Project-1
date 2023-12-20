@@ -11,6 +11,7 @@
 .decor {
     flex-grow: 1;
     position: relative;
+    min-height: 340px;
     padding: 30px;
     border-radius: 24px;
     border: 1px solid #C2C2C2;
@@ -59,10 +60,12 @@
     bottom: 20px;
     right: 40px;
     padding: 22px 72px 22px 22px;
+    font-weight: 600;
     border-radius: 32px;
     background-image: url("../images/btn-arrow.png");
     background-position: 112px center;
     background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
 }
 
 /* content */
@@ -79,6 +82,19 @@
     grid-template-columns: 1fr 1.4fr 0.7fr;
     grid-template-rows: 455px;
     grid-gap: 20px;
+}
+
+.content-link {
+    display: inline-block;
+    height: 100%;
+}
+
+.hover-box{
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-box:hover {
+    transform: scale(105%);
 }
 
 .small-cards-wrapper {
