@@ -9,6 +9,7 @@
         left: 20px;
         width: 50%;
         transition: max-height 0.3s, padding 0.3s ease;
+        z-index: 10;
     }
 
     .header__list {
@@ -32,4 +33,26 @@
         transform: rotate(180deg);
     }
     
+}
+
+@media (max-width: 650px) {
+    .icons {
+        display: none;
+    }
+
+    .header__right {
+        max-width: 15%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__right {
+        display: none;
+    }
+
+    .supportUs {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
 }
