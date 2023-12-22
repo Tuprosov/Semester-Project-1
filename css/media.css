@@ -32,7 +32,34 @@
     .header__left #menu-toggle:checked + label::before {
         transform: rotate(180deg);
     }
+
+    /* index */
+
+    .title-text {
+        max-width: none;
+        text-align: center;
+    }
+
+    .decor-1 {
+        left: -40px;
+    }
+
+    .decor-2 {
+        right: -30px;
+    }
     
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+
+    /* index */
+
+    .bookNow {
+        background-position: 95px center;
+    }
 }
 
 @media (max-width: 650px) {
@@ -43,6 +70,31 @@
     .header__right {
         max-width: 15%;
         justify-content: center;
+    }
+
+    /* index */
+
+    .bookNow {
+        padding: 18px 72px 18px 18px;
+        right: 20px;
+    }
+
+    .decor {
+        padding: 15px;
+        min-height: 300px;
+    }
+
+    .decor__desc {
+        padding: 10px 15px;
+    }
+
+    .decor-1 {
+        bottom: 40px;
+        left: -10px;
+    }
+
+    .decor-2 {
+        top: 60px;
     }
 }
 

@@ -14,7 +14,6 @@
 .decor {
     flex-grow: 1;
     position: relative;
-    min-width: 700px;
     min-height: 340px;
     padding: 30px;
     border-radius: 24px;
@@ -39,12 +38,14 @@
 
 .decor-1 {
     position: absolute;
+    max-width: 80%;
     bottom: -80px;
     left: -80px;
 }
 
 .decor-2 {
     position: absolute;
+    max-width: 40%;
     top: -10px;
     right: -50px;
 }
