@@ -84,15 +84,28 @@
     box-shadow: 0px 70px 134px 0px rgba(0, 0, 0, 0.25), 0px -70px 134px 0px rgba(0, 0, 0, 0.12);
 }
 
-.grid-container {
+.content-1, .content-2 {
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.content-1 {
     margin-bottom: 20px;
-    grid-template-columns: 1fr 1.4fr 0.7fr;
-    grid-template-rows: 455px;
-    grid-gap: 20px;
 }
 
 .content-link {
     display: inline-block;
+    width: 100%;
+}
+
+.content-link .content__img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.gallery .content-link, 
+.gallery .content-link .content__img{
     height: 100%;
 }
 
@@ -114,21 +127,11 @@
     gap: 15px;
 }
 
-.intro-desc {
-    font-size: 3rem;
-    color: #70141C;
-    line-height: 140%;
-}
-
-.collections {
-    padding: 10px;
-    background: url("../images/red-background.png") center center / cover no-repeat;
-    border-radius: 20px;
-}
-
 .gallery,.cosmology,.biology,.collections,
 .evolution,.robotics,.ecology {
     position: relative;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    flex: 1 1 auto;
 }
 
 .gallery h2,
@@ -143,7 +146,7 @@
     left: 20px;
     color: #4B3C20;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 400;
     line-height: 150%; /* 60px */
 }
@@ -156,11 +159,7 @@
     color: white;
 }
 
-.collections h2 {
-    position: static;
-}
-
-.position {
+.position-bottom {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -189,29 +188,33 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
                  url("../images/shop.jpg") lightgray center center / cover no-repeat;
     box-shadow: 0px 70px 134px 0px rgba(0, 0, 0, 0.25), 0px -70px 134px 0px rgba(0, 0, 0, 0.12);   
-}
-
-.shop-wrapper {
     color: #FFF;
     text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.40);
     font-family: Raleway;
-    font-size: 60px;
     font-weight: 700;
-    line-height: 150%; /* 90px */
 }
 
 .shop-wrapper h2 {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-size: 3.2rem;
     font-weight: 600;
 }
 
+.shop-wrapper a {
+    position: relative;
+    display: inline-block;
+    min-height: 400px;
+}
+
 .shop-desc {
+    font-size: 4rem;
     max-width: 700px;
-    margin-bottom: 100px;
 }
 
 .shop-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     font-size: 1.2rem;
     font-weight: 600;
 }

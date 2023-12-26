@@ -1,4 +1,9 @@
 @media (max-width: 1150px) {
+    html {
+        font-size: 12px;
+    }
+
+
     .header__nav {
         max-height: 0;
         overflow: hidden;
@@ -9,7 +14,7 @@
         left: 20px;
         width: 50%;
         transition: max-height 0.3s, padding 0.3s ease;
-        z-index: 10;
+        z-index: 100;
     }
 
     .header__list {
@@ -35,6 +40,10 @@
 
     /* index */
 
+    .bookNow {
+        background-position: 95px center;
+    }
+
     .title-text {
         max-width: none;
         text-align: center;
@@ -48,22 +57,32 @@
         right: -30px;
     }
     
+    .arrow {
+        width: 80px;
+    }
+    
 }
 
 @media (max-width: 1024px) {
-    html {
-        font-size: 12px;
-    }
-
     /* index */
 
-    .bookNow {
-        background-position: 95px center;
+    .content-1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+}
+
+@media (max-width: 730px) {
+    /* index */
+
+    .content-2 {
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 650px) {
-    .icons {
+    .header-icons {
         display: none;
     }
 
@@ -96,6 +115,18 @@
     .decor-2 {
         top: 60px;
     }
+
+    .shop-wrapper {
+        padding: 30px;
+    }
+    
+    .shop-wrapper h2 {
+        font-size: 2.5rem;
+    }
+
+    .shop-desc {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -105,6 +136,24 @@
 
     .supportUs {
         padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .footer-wrapper {
+        padding: 20px;
+    }
+
+    /* index */
+
+    .shop-wrapper h2 {
+        font-size: 2rem;
+    }
+
+    .shop-desc {
+        font-size: 2.1rem;
+    }
+
+    .shop-info {
         font-size: 1rem;
     }
 }
