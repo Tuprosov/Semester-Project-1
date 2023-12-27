@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* hero */
 
 .background {
@@ -9,6 +16,8 @@
 .exhibits__item {
     padding: 15px;
     border-radius: 10px;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
 }
 
@@ -18,8 +27,12 @@
 
 
 .exhibits__item:hover .exhibits__img {
-    transform: scale(105%);
-    transform-origin: bottom center;
+    -webkit-transform: scale(105%);
+        -ms-transform: scale(105%);
+            transform: scale(105%);
+    -webkit-transform-origin: bottom center;
+        -ms-transform-origin: bottom center;
+            transform-origin: bottom center;
 }
 
 
@@ -34,18 +47,25 @@
 
 .exhibits__wrapper {
     gap: 45px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .exhibits__img {
     max-width: 23%;
     max-height: 215px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
 .exhibits__img img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .exhibits__item:nth-child(2) img,
@@ -77,12 +97,20 @@
     width: 100%;
     height: 2px;
     background-color: black;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .exhibits__item:hover .exhibits__link::after {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
 }
 
 /* special */
@@ -115,9 +143,12 @@
 }
 
 .special__list {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .special__item h3 {
@@ -129,6 +160,8 @@
     max-height: 700px;
     max-width: 31%;
     min-width: 320px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -140,7 +173,8 @@
     margin-bottom: 30px;
     width: 100%;
     height: 280px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .special__item .special__desc {

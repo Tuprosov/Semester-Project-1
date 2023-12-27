@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* hero */
 
 .background {
@@ -52,7 +59,9 @@
 .input-box {
     margin-bottom: 10px;
     width: 50%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -79,5 +88,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }

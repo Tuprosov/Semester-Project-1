@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* main */
 
 .main {
@@ -11,8 +18,11 @@ h2 {
 
 .wrapper {
     padding: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 80px;
 }
 
@@ -54,6 +64,8 @@ h2 {
     font-size: 1.3rem;
     font-weight: 700;
     cursor: pointer;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    -o-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -62,7 +74,11 @@ h2 {
     display: inline-block;
     position: absolute;
     right: 30px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
     transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
 }  
 
 .accordion-content {
@@ -70,8 +86,12 @@ h2 {
     background-color: #fff;
     max-height: 0;
     overflow: hidden;
+    -webkit-transition: max-height 0.2s, padding 0.2s;
+    -o-transition: max-height 0.2s, padding 0.2s;
     transition: max-height 0.2s, padding 0.2s;
-    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1)
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+         -o-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+            transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1)
 }
 
 .accordion-section input:checked + .accordion-label + .accordion-content {
@@ -85,14 +105,19 @@ h2 {
 }
 
 .accordion-section input:checked + .accordion-label::after {
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 /* form */
 
 .content__form {
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 25px;
 }
 

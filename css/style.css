@@ -1,9 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* hero */
 
 .main-wrapper {
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 80px;
 }
 
@@ -12,24 +24,31 @@
 }
 
 .decor {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     position: relative;
     min-height: 340px;
     padding: 30px;
     border-radius: 24px;
     border: 1px solid #C2C2C2;
     background: url("../images/page-background.jpg"), lightgray 50% / cover no-repeat;
-    box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.25) inset;
+    -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.25) inset;
+            box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.25) inset;
 }
 
 .decor__desc {
     position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: 10px 30px;
     border-radius: 38px;
     border: 1px solid #A5A5A5;
+    background: -o-linear-gradient(327deg, #FAFAFA 21.87%, #C2C2C2 94.35%);
     background: linear-gradient(123deg, #FAFAFA 21.87%, #C2C2C2 94.35%);
-    box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.25) inset;
+    -webkit-box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.25) inset;
+            box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.25) inset;
     color: #111;
     font-size: 1.2rem;
     font-weight: 600;
@@ -72,6 +91,8 @@
     background-image: url("../images/btn-arrow.png");
     background-position: 112px center;
     background-repeat: no-repeat;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
@@ -80,13 +101,17 @@
 .wrapper {
     padding: 25px;
     border-radius: 30px;
+    background: -o-linear-gradient(320deg, #EFEFEF 25.65%, #FFF 30.25%, #FDFDFD 34.58%, #CACACA 92.71%);
     background: linear-gradient(130deg, #EFEFEF 25.65%, #FFF 30.25%, #FDFDFD 34.58%, #CACACA 92.71%);
-    box-shadow: 0px 70px 134px 0px rgba(0, 0, 0, 0.25), 0px -70px 134px 0px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0px 70px 134px 0px rgba(0, 0, 0, 0.25), 0px -70px 134px 0px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 70px 134px 0px rgba(0, 0, 0, 0.25), 0px -70px 134px 0px rgba(0, 0, 0, 0.12);
 }
 
 .content-1, .content-2 {
     gap: 20px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .content-1 {
@@ -101,7 +126,8 @@
 .content-link .content__img {
     width: 100%;
     border-radius: 20px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .gallery .content-link, 
@@ -110,28 +136,41 @@
 }
 
 .hover-box{
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
 .hover-box:hover {
-    transform: scale(105%);
+    -webkit-transform: scale(105%);
+        -ms-transform: scale(105%);
+            transform: scale(105%);
 }
 
 .small-cards-wrapper {
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .small-cards {
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     gap: 15px;
 }
 
 .gallery,.cosmology,.biology,.collections,
 .evolution,.robotics,.ecology {
     position: relative;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    flex: 1 1 auto;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
 }
 
 .gallery h2,
@@ -172,7 +211,9 @@
 }
 
 .flex-container {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .flex-container div img {
@@ -185,9 +226,14 @@
     min-height: 500px;
     padding: 40px 80px;
     border-radius: 30px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.20)), to(rgba(0, 0, 0, 0.20))),
+                 url("../images/shop.jpg") lightgray center center / cover no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
+                 url("../images/shop.jpg") lightgray center center / cover no-repeat;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%),
                  url("../images/shop.jpg") lightgray center center / cover no-repeat;
-    box-shadow: 0px 70px 134px 0px rgba(0, 0, 0, 0.25), 0px -70px 134px 0px rgba(0, 0, 0, 0.12);   
+    -webkit-box-shadow: 0px 70px 134px 0px rgba(0, 0, 0, 0.25), 0px -70px 134px 0px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 70px 134px 0px rgba(0, 0, 0, 0.25), 0px -70px 134px 0px rgba(0, 0, 0, 0.12);   
     color: #FFF;
     text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.40);
     font-family: Raleway;
