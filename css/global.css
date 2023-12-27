@@ -165,7 +165,7 @@ section {
 
 .header__item:hover::after {
     transform: scaleX(1);
-  }
+}
 
 .supportUs {
     margin-left: auto;

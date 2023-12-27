@@ -71,6 +71,12 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
+    /* about */
+
+    .hero-wrapper {
+        background-position: center center;
+    }
+
 }
 
 @media (max-width: 730px) {
@@ -78,6 +84,17 @@
 
     .content-2 {
         flex-wrap: wrap;
+    }
+
+    /* exhibitions */
+
+    .exhibits__wrapper {
+        flex-direction: column;
+    }
+
+    .exhibits__img {
+        max-width: none;
+        max-height: none;
     }
 }
 
@@ -126,6 +143,12 @@
 
     .shop-desc {
         font-size: 3rem;
+    }
+
+    /* about */
+
+    .content__list {
+        gap: 10px;
     }
 }
 
